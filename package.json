@@ -5,7 +5,8 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "axios": "^0.18.0",
@@ -36,5 +37,22 @@
       "vue-cli-service lint",
       "git add"
     ]
-  }
+  },
+  "description": "该demo展示了如何在 vue 中添加权限控制",
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ly2011/vue-permission.git"
+  },
+  "keywords": [
+    "vue",
+    "vue-auth",
+    "vue-permission"
+  ],
+  "author": "ly2011",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ly2011/vue-permission/issues"
+  },
+  "homepage": "https://ly2011.github.io/vue-permission"
 }
