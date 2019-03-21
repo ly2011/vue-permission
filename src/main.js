@@ -24,6 +24,7 @@ router.beforeEach((to, from, next) => {
       next({ path: '/login' })
     }
   } else {
+    // 这里是为了防止重复获取权限列表
     if (!store.state.permission.permissionList) {
       store.dispatch('permission/fetchPermission').then(() => {
         next({ path: to.path })
